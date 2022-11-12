@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	input, err := utils.ReadInts("../../../inputs/2018/01.txt")
+	input, err := utils.ReadInts("./01.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
