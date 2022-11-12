@@ -8,14 +8,14 @@ import (
 )
 
 func main() {
-	input, err := utils.ReadInts("../../inputs/2018/01.txt")
+	input, err := utils.ReadInts("../../../inputs/2018/01.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Println("Part 1 Solution:", solvePart1(input))
-	fmt.Println("Part 2 Solutiion:", solvePart2(input))
-
+	fmt.Println("Day 1 ⭐")
+	fmt.Println("Part 1:", solvePart1(input))
+	fmt.Println("Part 2:", solvePart2(input))
 }
 
 func solvePart1(input []int) int {
@@ -31,7 +31,7 @@ func solvePart2(input []int) (currFreq int) {
 	freqUsed := make(map[int]bool)
 	idx := 0
 
-	for true {
+	for {
 		freqUsed[currFreq] = true
 		currFreq += input[idx%len(input)]
 
