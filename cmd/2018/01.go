@@ -1,50 +1,21 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
 	"log"
-	"os"
-	"strconv"
+
+	"github.com/vitorduarte/aoc/cmd/utils"
 )
 
 func main() {
-	input, err := readInts("../../inputs/2018/01.txt")
+	input, err := utils.ReadInts("../../inputs/2018/01.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	// fmt.Println(solvePart1(input))
+	fmt.Println("Part 1 Solution:", solvePart1(input))
+	fmt.Println("Part 2 Solutiion:", solvePart2(input))
 
-	fmt.Println(solvePart2(input))
-
-}
-
-func readInts(filename string) ([]int, error) {
-	var result []int
-
-	file, err := os.Open(filename)
-	if err != nil {
-		return result, err
-	}
-	defer file.Close()
-
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		x, err := strconv.Atoi(scanner.Text())
-		if err != nil {
-			log.Fatal(err)
-			return nil, err
-		}
-		result = append(result, x)
-	}
-
-	if err := scanner.Err(); err != nil {
-		log.Fatal(err)
-		return nil, err
-	}
-
-	return result, nil
 }
 
 func solvePart1(input []int) int {
