@@ -15,7 +15,7 @@ func main() {
 
 	fmt.Println("Day 2 ⭐")
 	fmt.Println("Part 1:", solvePart1(input))
-	fmt.Println("Part 2 Solution:", solvePart2(input))
+	fmt.Println("Part 2:", solvePart2(input))
 
 }
 
