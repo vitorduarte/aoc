@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/vitorduarte/aoc/cmd/utils"
+	"github.com/vitorduarte/aoc/utils"
 )
 
 type Point struct {

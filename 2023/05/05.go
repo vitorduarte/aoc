@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/vitorduarte/aoc/cmd/utils"
+	"github.com/vitorduarte/aoc/utils"
 )
 
 type Sheet map[string]string

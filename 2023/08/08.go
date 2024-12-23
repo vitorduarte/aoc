@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/vitorduarte/aoc/cmd/utils"
+	"github.com/vitorduarte/aoc/utils"
 )
 
 type cordinates struct {

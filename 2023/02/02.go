@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/vitorduarte/aoc/cmd/utils"
+	"github.com/vitorduarte/aoc/utils"
 )
 
 type GameSet map[string]int
